@@ -8,4 +8,8 @@ console.log(findMatching(drivers, "Bobby"));  // It outputs ["Bobby", "Bobby"]
 console.log(findMatching(drivers, "Sammy"));  // It outputs ["Sammy"]
 console.log(findMatching(drivers, "bobby"));  // It outputs ["Bobby", "Bobby"] (case insensitive)
 
+function fuzzyMatch(drivers, letters) {
+    return drivers.filter(driver => driver.startsWith(letters));
+  }
+  
   
